@@ -32,7 +32,7 @@
                 <li>
                     <a href="#">
                     <span class="icon"><ion-icon name="images"></ion-icon></span>
-                    <span class="title">Évènement</span></a>
+                    <span class="title">Évènements</span></a>
                 </li>
 
                 <li>
