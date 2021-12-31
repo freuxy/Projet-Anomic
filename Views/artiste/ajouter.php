@@ -16,29 +16,29 @@
 
                 <div class="col-span-6 sm:col-span-3">
                   <label for="first-name" class="block text-sm font-medium text-gray-700">Nom</label>
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 border-b-sky-900 focus:border-indigo-500 block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-[#E4DE4B] border-b-sky-900 focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
   
                 <div class="col-span-6 sm:col-span-3">
                   <label for="last-name" class="block text-sm font-medium text-gray-700">Prénom</label>
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
                   <label for="last-name" class="block text-sm font-medium text-gray-700">Nom d'utilisateur</label>
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
 
 
                 
                 <div class="col-span-6 sm:col-span-3 w-full">
                   <label for="last-name" class="block text-sm font-medium text-gray-700">Mot de passe</label>
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
                   <label for="last-name" class="block text-sm font-medium text-gray-700">Confirmer le mot de passe</label>
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
@@ -55,7 +55,7 @@
                     <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </span>
-                <button  type="file" id="file-upload" name="file-upload"  class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <button  type="file" id="file-upload" name="file-upload"  class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2D2E35]">
                   Modifier la Photo
                   <input id="file-upload" name="file-upload" type="file" class="sr-only">
                 </button>
@@ -76,11 +76,11 @@
 
 
 
-            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-indigo-600 shadow-sm text-sm font-medium rounded-md text-indigo-600  hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
+            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-[#2D2E35] shadow-sm text-sm font-medium rounded-md text-[#2D2E35]  hover:bg-[#E4DE4B] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2D2E35] ">
                 Annuler
               </button>
 
-              <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#2D2E35] hover:bg-[#E4DE4B] hover:text-[#2D2E35] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2D2E35]">
                 Ajouter un administrateur
               </button>
             </div>
