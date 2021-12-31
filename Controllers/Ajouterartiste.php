@@ -1,6 +1,6 @@
 <?php
 
-class Artiste extends Controller
+class Ajouterartiste extends Controller
 {
     public function index(){
         $this->render('index');

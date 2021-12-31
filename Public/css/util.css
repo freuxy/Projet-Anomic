@@ -1,0 +1,31 @@
+/*Colors*/
+
+
+.colorprimary{
+    color: var(--primary);
+}
+
+.colorsecondary{
+    color: var(--secondary);
+}
+
+.colorgray{
+    color: var(--gray);
+}
+
+.colorblack1{
+    color: var(--black1);
+}
+
+.colorblack2{
+    color: var(--black2);
+}
+
+.bg-blue-600
+{
+    background: var(--primary);
+}
+
+.pad{
+    padding: 20px;
+}

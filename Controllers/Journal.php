@@ -1,6 +1,6 @@
 <?php
 
-class Artiste extends Controller
+class Journal extends Controller
 {
     public function index(){
         $this->render('index');
