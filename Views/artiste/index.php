@@ -1,6 +1,6 @@
 <div class="flex justify-center">
   <div class="rounded-lg shadow-lg bg-white max-w-sm">
-    <a href="index.php?p=ajouterartiste">
+    <a href="index.php?p=artiste/ajouter">
       <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
     </a>
     <div class="p-6">

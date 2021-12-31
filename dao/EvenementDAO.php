@@ -10,7 +10,7 @@ class EvenementDao extends DAO
 
     public function __construct($adr)
     {
-        $this->adresse = $adr;
+        $this->evenement = $evmnt;
         $this->connexion = new DaoFactory();
     }
 
@@ -19,10 +19,11 @@ class EvenementDao extends DAO
         // TODO: Implement ajouter() method.
         try {
             $connexion = $this->connexion->getConnexion();
-            $requete = $connexion->prepare('insert into adresse(rue, ville, codePostal) values (:rue, :ville, :code)');
-            $requete->bindValue(':rue', $this->adresse->getRue());
-            $requete->bindValue(':ville', $this->adresse->getVille());
-            $requete->bindValue(':code', $this->adresse->getCodePostal());
+            $requete = $connexion->prepare('INSERT INTO evenement(intitule, date, description,lien) values (:intitule, :date, :description, :lien)');
+            $requete->bindValue(':intitule', $this->evenement->getIntitule());
+            $requete->bindValue(':date', $this->evenement->getDate());
+            $requete->bindValue(':description', $this->evenement->getDescription());
+            $requete->bindValue(':lien', $this->evenement->getLien());
             return $requete->execute();
         }catch (Exception $e) {
             die($e->getMessage());
@@ -32,6 +33,18 @@ class EvenementDao extends DAO
     public function modifier($obj)
     {
         // TODO: Implement modifier() method.
+        try {
+            $connexion = $this->connexion->getConnexion();
+            $requete = $connexion->prepare('UPDATE evenement SET (intitule, date, description,lien) values (:intitule, :date, :description, :lien)');
+            $requete->bindValue(':intitule', $this->evenement->getIntitule());
+            $requete->bindValue(':date', $this->evenement->getDate());
+            $requete->bindValue(':description', $this->evenement->getDescription());
+            $requete->bindValue(':lien', $this->evenement->getLien());
+            return $requete->execute();
+        }catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
     }
 
     public function supprimer($id)

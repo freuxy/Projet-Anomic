@@ -175,7 +175,7 @@ body
 
 .main.active
 {
-    width: calc(100% - 160px);
+    width: calc(100% - 0px);
     left: 80px;
 
 }
