@@ -5,7 +5,7 @@ require_once ("DaoFactory.php");
 
 class EvenementDao extends DAO
 {
-    private $adresse;
+    private $evenement;
     private $connexion;
 
     public function __construct($adr)

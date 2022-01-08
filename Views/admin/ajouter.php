@@ -2,14 +2,14 @@
     <div class="md:grid md:grid-cols-3 md:gap-6">
       <div class="md:col-span-1">
         <div class="px-4 sm:px-0">
-          <h3 class="text-lg font-medium leading-6 text-gray-900">Ajouter un artiste</h3>
+          <h3 class="text-lg font-medium leading-6 text-gray-900">Ajouter un administrateur</h3>
           <p class="mt-1 text-sm text-gray-600">
             Tous les champs sont obligatoires
           </p>
         </div>
       </div>
       <div class="mt-5 md:mt-0 md:col-span-2">
-        <form action="#" method="POST">
+        <form action="index.php?p=admin/creer" method="POST">
           <div class="shadow overflow-hidden sm:rounded-md">
             <div class="px-4 py-5 bg-white sm:p-6">
               <div class="grid grid-cols-6 gap-6">
@@ -25,20 +25,20 @@
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
-                  <label for="last-name" class="block text-sm font-medium text-gray-700">Nom d'utilisateur</label>
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  <label for="username" class="block text-sm font-medium text-gray-700">Nom d'utilisateur</label>
+                  <input type="text" name="username" id="username" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
 
 
                 
                 <div class="col-span-6 sm:col-span-3 w-full">
-                  <label for="last-name" class="block text-sm font-medium text-gray-700">Mot de passe</label>
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  <label for="password" class="block text-sm font-medium text-gray-700">Mot de passe</label>
+                  <input type="text" name="password" id="password" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
-                  <label for="last-name" class="block text-sm font-medium text-gray-700">Confirmer le mot de passe</label>
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  <label for="password_confirm" class="block text-sm font-medium text-gray-700">Confirmer le mot de passe</label>
+                  <input type="text" name="password_confirm" id="password_confirm" autocomplete="family-name" class="mt-1 focus:ring-[#E4DE4B] focus:border-[#E4DE4B] block w-full p-3 shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
@@ -76,12 +76,12 @@
 
 
 
-            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-[#2D2E35] shadow-sm text-sm font-medium rounded-md text-[#2D2E35]  hover:bg-[#E4DE4B] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2D2E35] ">
+            <button type="reset" class="inline-flex justify-center py-2 px-4 border border-[#2D2E35] shadow-sm text-sm font-medium rounded-md text-[#2D2E35]  hover:bg-[#E4DE4B] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2D2E35] ">
                 Annuler
               </button>
 
               <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#2D2E35] hover:bg-[#E4DE4B] hover:text-[#2D2E35] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2D2E35]">
-                Ajouter un artiste
+                Ajouter un administrateur
               </button>
             </div>
           </div>

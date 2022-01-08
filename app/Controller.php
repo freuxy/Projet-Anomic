@@ -3,12 +3,23 @@
 abstract class Controller
 {
 
-    public function loadModel($model){
+    public function loadModel($model,$data=false){ 
+        //var_dump(file_exists(ROOT.'Models/'.$model.'.php')); die;
         // On va chercher le fichier correspondant au modËle souhaitÈ
-        require_once(ROOT.'Model/'.$model.'.php');
+        require_once(ROOT.'Models/'.$model.'.php');
+        // On crÈe une instance de ce modËle. Ainsi "Article" sera accessible par $this->Article
+        $this->$model = new $model($data);
+    }
+
+    public function loadDAO($dao,$data){
+        // On va chercher le fichier correspondant au modËle souhaitÈ
+
+        //var_dump($data); die;
+
+        require_once(ROOT.'dao/'.$dao.'.php');
 
         // On crÈe une instance de ce modËle. Ainsi "Article" sera accessible par $this->Article
-        $this->$model = new $model();
+        $this->$dao = new $dao($data);
     }
 
     public function render($fichier, $data = []){

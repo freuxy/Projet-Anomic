@@ -2,7 +2,7 @@
 
 abstract class DAO
 {
-    public abstract function ajouter();
+    public abstract function creer();
 
     public abstract function modifier($obj);
 

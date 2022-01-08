@@ -1,18 +1,21 @@
 <?php 
-class Admin {
+class Admins {
     private $idAdmin;
     private $username;
     private $password;
     private $nom;
     private $prenom;
 
-    public function __construct($id,$user,$passw,$n,$pnom)
+    public function __construct($data)
     {
-        $this->idAdmin=$id;
-        $this->username=$user;
-        $this->password=$passw;
-        $this->nom=$n;
-        $this->prenom=$pnom;
+        if($data){
+            $this->idAdmin=$data[0];
+            $this->username=$data[1];
+            $this->password=$data[2];
+            $this->nom=$data[3];
+            $this->prenom=$data[4];
+        }
+       
     }
 
     public function getIdAdmin()
